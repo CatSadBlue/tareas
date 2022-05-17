@@ -1,0 +1,175 @@
+h1{
+    color: #6e4cc2ff; 
+    font-size: 70px;   
+    font-style: italic;
+    font-family: 'Barlow', sans-serif;
+    text-align: center;
+    text-shadow: 3px 3px #ffddedff;
+    }
+
+
+.header_navegacion ul{
+    display: flex;
+    align-items: flex-end;
+    list-style-type: none;
+    }
+
+li {
+    padding: 10px;
+}
+a  {
+    text-decoration: none;
+    color: #ff72c7;
+}
+nav{
+    order: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+header {
+    display: flex;
+    align-items: center;
+}
+.header_navegacion li a {
+    text-decoration: none;
+}
+.header_logo{
+    width: 200px;
+}
+
+
+
+.descripcion_titulo {
+    font-weight: 700;
+    color: #00d7b3ff; 
+}
+body{
+    color: #999999; 
+    font-family: 'Questrial', sans-serif;   
+    }
+footer{
+        color: hsl(0, 0%, 100%); 
+        font-weight: 500;
+        background-color:#ff72c7;        
+        text-align: center;
+    }
+h3{
+        color: #ff72c7; 
+        font-weight: 500;
+        text-align: center;
+        font-family: 'Barlow', sans-serif;
+        grid-area: h3;
+    }
+
+/* CLASE GRID */
+.grid_main {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.grid_seccion {
+    display: grid;
+}
+
+@media screen and (min-width: 1150px) {
+    .grid_seccion {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: 
+        "h3 h3 h3"
+        "promos_1 promos_2 promos_3";
+        gap: 20px;
+    }
+}
+
+@media screen and (min-width: 400px)and (max-width: 1149px) {
+    .grid_seccion {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+        "h3 h3"
+        "promos_1 promos_2"
+        "promos_3 promos_3";
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 399px) {
+    .grid_seccion {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas: 
+        "h3"
+        "promos_1"
+        "promos_2"
+        "promos_3";
+        gap: 20px;
+    }
+}
+
+.promos_1 {
+    grid-area: promos_1;
+}
+
+.promos_2 {
+    grid-area: promos_2;
+}
+
+.promos_3 {
+    grid-area: promos_3;
+}
+
+.portada{
+    display: flex;
+    flex-direction: column;
+    background-image: url(../recursos/portada.jpg);
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    background-repeat: round;
+}
+
+.portada_boton{
+    background-color:#ff72c7ff; 
+    color: hsl(0, 0%, 100%); 
+}
+.botoncomun{
+    background-color:#6e4cc2ff; 
+    color: hsl(0, 0%, 100%); 
+}
+
+
+
+.promociones{
+    /*display: flex;*/
+    /*flex-direction: row;*/
+    /*flex-wrap: wrap;*/
+}
+
+.promos_imagen{
+    width: 200px;
+    border-radius: 10px;
+
+}
+.promos_tarjetas{
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    background-color:#ffddedff;  
+    padding: 40px;
+    margin: 40px; 
+    width: 200px;
+    height: 300px;
+    border-radius: 30px;
+}
+
+
+/*.populares {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+*/
+
+
+.categorias{
+    display: flex;
+}
